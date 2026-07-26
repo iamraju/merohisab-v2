@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#0f172a" />
+        <title>MeroHisab Offline</title>
+        <style>
+            :root {
+                color-scheme: light;
+                --bg: radial-gradient(
+                    circle at 20% 20%,
+                    #dcfce7,
+                    #ecfeff 40%,
+                    #f8fafc 80%
+                );
+                --card: #ffffff;
+                --text: #0f172a;
+                --muted: #475569;
+                --accent: #0f766e;
+            }
+            body {
+                margin: 0;
+                min-height: 100dvh;
+                display: grid;
+                place-items: center;
+                font-family: "Figtree", "Segoe UI", sans-serif;
+                background: var(--bg);
+                color: var(--text);
+                padding: 1.5rem;
+            }
+            .card {
+                width: min(32rem, 100%);
+                background: var(--card);
+                border-radius: 1rem;
+                box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+                padding: 1.5rem;
+            }
+            h1 {
+                margin: 0 0 0.75rem;
+                font-size: 1.5rem;
+                letter-spacing: -0.02em;
+            }
+            p {
+                margin: 0;
+                color: var(--muted);
+                line-height: 1.6;
+            }
+            a {
+                display: inline-block;
+                margin-top: 1.25rem;
+                text-decoration: none;
+                font-weight: 600;
+                color: white;
+                background: var(--accent);
+                border-radius: 0.75rem;
+                padding: 0.7rem 1rem;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="card">
+            <h1>You are offline</h1>
+            <p>
+                MeroHisab is not connected right now. You can continue browsing
+                cached pages and retry once your connection returns.
+            </p>
+            <a href="/dashboard">Try Again</a>
+        </main>
+    </body>
+</html>
